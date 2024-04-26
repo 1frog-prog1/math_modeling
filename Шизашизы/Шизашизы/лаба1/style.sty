@@ -1,0 +1,127 @@
+\RequirePackage[russian]{babel}
+\RequirePackage{amsmath}
+\RequirePackage{amssymb}
+\RequirePackage{graphicx}
+\RequirePackage{multicol}
+\RequirePackage{datetime}
+
+% \parindent 1.25cm
+\textwidth=16cm
+\textheight=25cm
+% \oddsidemargin -2.5mm
+% \evensidemargin -2.5mm
+% \topmargin -20mm
+
+\newcommand{\sect}[1]{
+	\addcontentsline{toc}{section}{#1}
+	\section*{#1}
+}
+
+\newcommand{\subsect}[1]{
+	\addcontentsline{toc}{subsection}{#1}
+	\subsection*{#1}
+}
+
+\newcommand{\fefurule}[3]{
+    {
+        \rule{\textwidth}{#1}
+
+        \vspace{\dimexpr-\baselineskip + 1mm + #3 - 1pt}
+
+        \rule{\textwidth}{#2}
+    }
+}
+
+\newcommand{\uline}[1]{\underline{#1\vphantom{lp}}}
+
+\newdateformat{daydate}{\THEDAY}
+\newdateformat{monthdate}{\monthname[\THEMONTH]}
+\newdateformat{yeardate}{\THEYEAR}
+
+\newcommand{\fefutitlepage}[5]{
+	
+	% 1 - ОТЧЕТ
+	% 2 - к лабораторной роботе №3\\по дисциплине <<Дифференциальные уравнения>>
+	% 3 - 01.03.02 <<Прикладная математика и информатика>>
+	% 4 - Б9120-01.03.02миопд
+	% 5 - Крюков Н.В.
+	% \begin{titlepage}
+	{
+		\thispagestyle{empty}
+
+		\textwidth=16cm
+		\textheight=25cm
+		\oddsidemargin -2.5mm
+		\evensidemargin -2.5mm
+		\topmargin -20mm
+		\parindent=0pt
+		
+	
+		\begin{center}
+			\includegraphics[scale=0.2]{assets/fefulogo.pdf}
+			
+			{\fontsize{9}{9} \selectfont МИНИСТЕРСТВО НАУКИ И ВЫСШЕГО ОБРАЗОВАНИЯ РОССИЙСКОЙ ФЕДЕРАЦИИ}
+
+			{\fontsize{10}{10} \selectfont Федеральное государственное автономное образовательное учреждение высшего образования}
+
+			\textbf{<<Дальневосточный федеральный университет>>\\(ДВФУ)}
+
+			\fefurule{3pt}{1pt}{0pt}
+
+			\textbf{ИНСТИТУТ МАТЕМАТИКИ И КОМПЬЮТЕРНЫХ ТЕХНОЛОГИЙ}
+
+			\vspace{10pt}
+
+			\textbf{Департамент математического и компьютерного моделирования}
+
+			\vspace{30pt}
+
+			\textbf{#1}
+
+			\vspace{12pt}
+
+			#2
+
+			\vspace{12pt}
+
+			Направление подготовки
+
+			#3
+		\end{center}
+
+		\vspace{10pt}
+
+		\begin{multicols}{2}
+			{
+				\vfill{\null}
+				\columnbreak 
+				
+				Выполнил студент 
+				
+				гр. #4
+
+				$\underset{ \textit{(ФИО)} }{ \text{\uline{#5}} }$
+				$\underset{ \textit{(подпись)} }{ \uline{\hspace{50pt}} }$
+				
+				\vspace{10pt}
+				
+				<<\uline{ \daydate{\today} }>>
+				\uline{ \monthdate{\today} }
+				\uline{ \yeardate{\today}  г.}
+			}
+		\end{multicols}
+		
+		\vfill{\null}
+
+		\begin{center}
+			\textbf{Владивосток}
+
+			\textbf{\yeardate{\today}  г.}
+		\end{center}
+		\pagebreak
+	}
+	% \end{titlepage}
+
+\textwidth=16cm
+\textheight=21cm
+}

@@ -1,0 +1,9 @@
+\babel@toc {russian}{}\relax 
+\contentsline {section}{Введение}{3}{}%
+\contentsline {section}{Задача о выборе транспортного средства}{3}{}%
+\contentsline {subsection}{Постановка задачи}{3}{}%
+\contentsline {subsection}{Выбор переменных}{3}{}%
+\contentsline {subsection}{Выбор законов и зависимостей}{3}{}%
+\contentsline {subsection}{Формулировка математической модели}{4}{}%
+\contentsline {subsection}{Решение}{4}{}%
+\contentsline {section}{Заключение}{5}{}%

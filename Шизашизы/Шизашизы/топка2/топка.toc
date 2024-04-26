@@ -1,0 +1,11 @@
+\babel@toc {russian}{}\relax 
+\contentsline {section}{Введение}{3}{}%
+\contentsline {section}{Задача о температуре нагревательного прибора}{3}{}%
+\contentsline {subsection}{Постановка задачи}{3}{}%
+\contentsline {subsection}{Выбор переменных}{3}{}%
+\contentsline {subsection}{Выбор законов и зависимостей}{4}{}%
+\contentsline {subsection}{Формулировка математической модели}{4}{}%
+\contentsline {subsection}{Решение}{7}{}%
+\contentsline {subsection}{Код программы}{7}{}%
+\contentsline {subsection}{Тестирование}{8}{}%
+\contentsline {section}{Заключение}{10}{}%
